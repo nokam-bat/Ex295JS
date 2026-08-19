@@ -13,7 +13,7 @@ function showPlaylist(){
     for( let name of playlist) {
         console.log(name)
     }
-};
+}
 showPlaylist();
 
 //e
@@ -26,3 +26,10 @@ showPlaylist();
 
 //g
 playlist.splice(6,1);
+
+//Exo2
+let x = 1;
+while (x <= 9){
+    console.log(String(x).repeat(x))
+    x++
+}
