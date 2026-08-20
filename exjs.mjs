@@ -37,11 +37,11 @@ while (x <= 9){
 //VersionDeCamille La boucle for est plus safe car la condition est mise au début.
 //La boucle while est risquée car on risque d'oublier de rajouter x++ à la fin et de tout faire beuger.
 //for (let i = 1; i <=9; i ++){
+//    console.log(String(i).repeat(i));
+//}
 //initialisation: let i = 1
 //condition d'arrêt: 1 >= 9
 //incrémentation (pas d'avancement): i++
-//    console.log(String(i).repeat(i));
-//}
 
 //Exo3
 //a
