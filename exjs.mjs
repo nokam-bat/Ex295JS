@@ -43,5 +43,19 @@ while (x <= 9){
 //condition d'arrêt: 1 >= 9
 //incrémentation (pas d'avancement): i++
 
+//VersionProf avec 2 boucles for
+//for (let i = 0; i < 10; i++){
+//let res = ""
+//for (let j = 0; j < i; j++){
+//   res += i;
+//  }
+//      console.log(res);
+//}
+
 //Exo3
 //a
+const addition = (a, b) =>{
+    return a + b;
+};
+//On peut écrire différemment
+const addition = (a, b) => a+ b;
