@@ -13,7 +13,7 @@
   "license": "ISC",
   "author": "Noor",
   "type": "commonjs",
-  "main": "exjs.mjs",
+  "main": "Exercices Javascript Remémoration/main.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   }
