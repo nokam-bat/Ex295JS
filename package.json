@@ -16,5 +16,8 @@
   "main": "Exercices Javascript Remémoration/main.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.23"
   }
 }
