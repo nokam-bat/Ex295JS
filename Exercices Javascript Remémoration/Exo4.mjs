@@ -37,7 +37,7 @@ let student_index_found = classes.findIndex((student) =>
 console.log(student_index_found);
 
 
-//*
+/*
 Exercice 4 de la prof:
 // const today = dayjs()
 
@@ -69,4 +69,4 @@ let student_index_found = classes.findIndex((student) =>
     }
 )
 console.log(student_index_found);
-//*
+/*
