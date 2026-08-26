@@ -57,18 +57,18 @@ console.log(person.birthdate.format("DD.MM.YYYY") + " " + person.power);    #on 
 let classes = [{"id" : "1", "firstname" :"John"}, {"id" : "2", "firstname" :"Bryan"}, {"id" : "3", "firstname" :"Mark"}, {"id" : "4", "firstname" :"Harry"}];
 #"id" c'est la caractéristique, c'est nous qui choisissons le nom.
 #"1" c'est la valeur de la caractéristique
-// 1st argument : currentValue, 2nd argument index, 3rd argument : arr
+// 1st argument : currentValue, 2nd argument index, 3rd argument : array
 // arguments are not mandatory if we do not need them
 let student_found = classes.find((student, index, classes) =>
     {
         console.log(index);
         console.log(classes);
-        return student.firstname === person.firstname
+        return student.firstname === person.firstname    #return retourne la condition vrai, donc ça sort de la boucle.
     }
 )
 console.log(student_found);
 
-// 1st argument : currentValue, 2nd argument index, 3rd argument : arr
+// 1st argument : currentValue, 2nd argument index, 3rd argument : array
 let student_index_found = classes.findIndex((student) =>
     {
         return student.firstname === person.firstname
