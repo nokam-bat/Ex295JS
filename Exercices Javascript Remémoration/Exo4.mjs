@@ -35,3 +35,38 @@ let student_index_found = classes.findIndex((student) =>
     }
 )
 console.log(student_index_found);
+
+
+//*
+Exercice 4 de la prof:
+// const today = dayjs()
+
+let person = {
+    firstname : "John",
+    lastname : "Doe",
+    birthdate : dayjs('1977-01-11'),
+    power : "Magicien"
+}
+console.log(person.firstname + " " + person.lastname);
+console.log(person.birthdate.format("DD.MM.YYYY") + " " + person.power);
+
+let classes = [{"id" : "1", "firstname" :"John"}, {"id" : "2", "firstname" :"Bryan"}, {"id" : "3", "firstname" :"Mark"}, {"id" : "4", "firstname" :"Harry"}];
+// 1st argument : currentValue, 2nd argument index, 3rd argument : arr
+// arguments are not mandatory if we do not need them
+let student_found = classes.find((student, index, classes) =>
+    {
+        console.log(index);
+        console.log(classes);
+        return student.firstname === person.firstname
+    }
+)
+console.log(student_found);
+
+// 1st argument : currentValue, 2nd argument index, 3rd argument : arr
+let student_index_found = classes.findIndex((student) =>
+    {
+        return student.firstname === person.firstname
+    }
+)
+console.log(student_index_found);
+//*
