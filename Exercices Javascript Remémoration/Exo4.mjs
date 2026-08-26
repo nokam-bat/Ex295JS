@@ -41,16 +41,22 @@ console.log(student_index_found);
 Exercice 4 de la prof:
 // const today = dayjs()
 
-let person = {
-    firstname : "John",
-    lastname : "Doe",
-    birthdate : dayjs('1977-01-11'),
+let person = {     ##Les objets sont ce qu'il y a entre {}
+    firstname : "John",    #c'est un objet en valeur : caractéristique
+    lastname : "Doe", 
+    birthdate : dayjs('1977-01-11'),    #dayjs ça vient de la librairie des dates
     power : "Magicien"
 }
+
+# Ici on créer une liste d'objet, donc un tableau. 
+
 console.log(person.firstname + " " + person.lastname);
-console.log(person.birthdate.format("DD.MM.YYYY") + " " + person.power);
+console.log(person.birthdate.format("DD.MM.YYYY") + " " + person.power);    #on change l'affichage de dayjs pour la mettre en standard europe
+                                                                            #on utilise .format() pour ça
 
 let classes = [{"id" : "1", "firstname" :"John"}, {"id" : "2", "firstname" :"Bryan"}, {"id" : "3", "firstname" :"Mark"}, {"id" : "4", "firstname" :"Harry"}];
+#"id" c'est la caractéristique, c'est nous qui choisissons le nom.
+#"1" c'est la valeur de la caractéristique
 // 1st argument : currentValue, 2nd argument index, 3rd argument : arr
 // arguments are not mandatory if we do not need them
 let student_found = classes.find((student, index, classes) =>
